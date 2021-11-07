@@ -25,7 +25,7 @@ function renderItem(item) {
     .innerText = item.title;
 
      desc
-     .innerText = item.summary;
+     .innerText = item.summary.substring(0, 120);
 
     box.append(title, desc);
     document
